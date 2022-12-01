@@ -1,0 +1,17 @@
+<!--  наследуемся от шаблона default.html, который мы создавали для flatpages -->
+{% extends 'flatpages/default.html' %}
+
+
+{% block title %}
+Ad
+{% endblock title %}
+
+
+{% block content %}
+<h1>{{ ad }}</h1>
+<h3>{{ ad.category.name }}</h3>
+
+
+{% endblock content %}
+
+
